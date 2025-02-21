@@ -6,6 +6,8 @@
     --main-cyan: #3390EC;
     --secondery-gray: #C4C9CC;
     --hover-gray: #eff0f3;
+    --search-bar: #fff;
+    --main-black: #000;
 }
 
 * {
@@ -21,6 +23,48 @@
 html {
     overflow: hidden;
     font-size: 10px;
+}
+
+body.dark {
+    --main-white: #212121;
+    --border-gray: #1A1A1A;
+    --main-gray: #A9ACAF;
+    --text-gray: #808185;
+    --main-cyan: #8774E1;
+    --secondery-gray: #8a8e8f;
+    --hover-gray: #2B2B2B;
+    --search-bar: #181818;
+    --main-black: #fff;
+
+    .section-openChatbox {
+        position: relative;
+        background: url("img/pattern.svg") repeat, url("img/chat-bg-dark.png") no-repeat center/cover;
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+    }
+
+    .--open {
+        background-color: var(--main-cyan);
+
+        &:hover {
+            background-color: var(--main-cyan);
+        }
+
+        .chat-preview-name, .chat-preview-text, .chat-details {
+            color: var(--main-black);
+        }
+
+        .unread-message {
+            background-color: var(--main-black);
+            color: var(--main-cyan);
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 100px;
+        border: transparent;
+    }
 }
 
 body {
@@ -68,6 +112,7 @@ a {
     padding: 0.825rem 2.425rem 0.525rem;
     gap: 2.125rem;
     border-bottom: 1px solid var(--border-gray);
+    background-color: var(--main-white);
 }
 
 .chats-header-main {
@@ -79,6 +124,7 @@ a {
 
 .chats-header-main-icon {
     font-size: 2.575rem;
+    color: var(--main-gray);
 }
 
 
@@ -90,15 +136,17 @@ a {
     padding-right: 1.725rem;
     border: 1px solid var(--border-gray);
     border-radius: 25px;
+    background-color: var(--search-bar);
 }
 
 .chats-header-main-searchbar-input {
-    background-color: var(--main-white);
+    background-color: var(--search-bar);
     border: none;
     height: 3.925rem;
     font-size: 1.625rem;
     font-family: inherit;
     flex-basis: 100%;
+    color: var(--main-black);
 
     &::placeholder {
         color: var(--main-gray);
@@ -160,6 +208,7 @@ a {
     flex-direction: column;
     padding: 0.725rem;
     justify-content: start;
+    background-color: var(--main-white);
 }
 
 .chat {
@@ -209,6 +258,7 @@ a {
 .chat-preview-name {
     font-size: 1.6rem;
     font-weight: 500;
+    color: var(--main-black);
 }
 
 .chat-preview-text {
@@ -248,7 +298,7 @@ a {
 .section-openChatbox {
     position: relative;
     background: url("img/pattern.svg") repeat, url("img/chat-bg.png") no-repeat center/cover;
-    background-blend-mode: soft-light; /* Try overlay, soft-light, etc. */
+    background-blend-mode: soft-light;
     background-attachment: fixed;
 }
 
@@ -285,6 +335,7 @@ a {
 .openChat-sender-username {
     font-size: 1.6rem;
     font-weight: 500;
+    color: var(--main-black);
 }
 
 .openChat-sender-lastseen {
@@ -331,6 +382,7 @@ a {
     max-width: 31.25rem;
     border-radius: 7px 7px 7px 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    color: var(--main-black);
 }
 
 .from--me {
@@ -353,7 +405,7 @@ a {
 }
 
 .openChat-messageSender-sendBtn-icon {
-    color: var(--main-white);
+    color: #fff;
     --ionicon-stroke-width: 32px;
     font-size: 2.025rem;
     background-color: var(--main-cyan);
@@ -376,6 +428,7 @@ a {
 
 .openChat-messageSender-input {
     background-color: var(--main-white);
+    color: var(--main-black);
     border: none;
     height: 5.125rem;
     font-size: 1.625rem;

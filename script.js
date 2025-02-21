@@ -29,7 +29,10 @@
 //     openedChatSina.classList.add('--closed')
 //     sinaChat.classList.add('--close')
 // })
-
+let darkModeButton = document.querySelector('.chats-header-main-darkMode');
+darkModeButton.addEventListener('click', function () {
+    document.querySelector('body').classList.toggle('dark')
+})
 document.addEventListener("DOMContentLoaded", function () {
     let users = ["erfan", "sina", "mahdiyar", "mohammadreza"]; // Add more names if needed
 
