@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Vazirmatn:wght@100..900&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="script.js"></script>
+    <title>Telegram Web</title>
+</head>
+<body>
+<div class="main-grid">
+    <section class="section-chats">
+        <header class="chats-header">
+            <div class="chats-header-main">
+                <a href="#">
+                    <ion-icon class="chats-header-main-icon" name="menu-outline"></ion-icon>
+                </a>
+                <div class="chats-header-main-searchbar">
+                    <a href="#">
+                        <ion-icon class="chats-header-main-searchbar-icon" name="search-outline"></ion-icon>
+                    </a>
+                    <input class="chats-header-main-searchbar-input" placeholder="Search"/>
+                </div>
+            </div>
+            <div class="chats-header-folders">
+                <a href="#" class="chats-header-folder --selected-folder">
+                    All Chats
+                </a>
+                <a href="#" class="chats-header-folder --unread-messages">
+                    IUST
+                    <span class="unread-message">
+                            6
+                        </span>
+                </a>
+            </div>
+        </header>
+        <div class="chats-column">
+            <div class="chat --sina ">
+                <img class="chat-profile" src="img/Sina-pfp.webp" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">Sina Fatemi</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        15:59
+                    </span>
+                    <span class="unread-message">
+                            6
+                    </span>
+                </div>
+            </div>
+            <div class="chat --erfan ">
+                <img class="chat-profile" src="img/Erfan-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">Erfan</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        07:50
+                    </span>
+                    <span class="unread-message">
+                            1
+                    </span>
+                </div>
+            </div>
+            <div class="chat --mahdiyar ">
+                <img class="chat-profile" src="img/Mhdyr-pfp.jpg" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">Mhdyr</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        01:04
+                    </span>
+                    <span class="unread-message">
+                            2
+                    </span>
+                </div>
+            </div>
+            <div class="chat --mohammadreza ">
+                <img class="chat-profile" src="img/Mhreza-pfp.webp" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">Mhreza</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        22:30
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+            <div class="chat">
+                <img class="chat-profile" src="img/sample-pfp.png" alt="sample profile">
+                <div class="chat-preview">
+                    <div class="chat-preview-name">No One</div>
+                    <div class="chat-preview-text">
+                        <!--                        <div class="chat-preview-sender">Erfan:&nbsp;</div>-->
+                        <div class="chat-preview-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <span class="chat-details-time">
+                        20:59
+                    </span>
+                    <span class="unread-message">
+                           9
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-openChatbox">
+        <section class="section-openChat --user-sina --closed">
+            <div class="openChat-sender">
+                <div class="openChat-sender-details">
+                    <a href="#"><img class="openChat-sender-img" src="img/Sina-pfp.webp" alt="sample private chat img"/></a>
+                    <a href="#" class="openChat-sender-name">
+                        <div class="openChat-sender-username">Sina Fatemi</div>
+                        <div class="openChat-sender-lastseen">last seen recently</div>
+                    </a>
+                </div>
+                <div class="openChat-options">
+                    <div class="openChat-options-call">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="call-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-search">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-menu">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.025rem" class="chats-header-main-icon"
+                                      name="ellipsis-vertical"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="openChat-container">
+                <div class="openChat-content">
+                    <span class="openChat-content-message from--me">Hi there Sina!</span>
+                    <span class="openChat-content-message">Hi there Sina!</span>
+                    <span class="openChat-content-message">How's it going?</span>
+                    <span class="openChat-content-message from--me">Great!</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Long Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 😀</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                </div>
+                <div class="openChat-messageSender">
+                    <div class="openChat-messageSender-textinput">
+                        <a href="#">
+                            <ion-icon class="openChat-messageSender-icon" name="happy-outline"></ion-icon>
+                        </a>
+                        <input class="openChat-messageSender-input" placeholder="Message"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-openChat --user-erfan --closed">
+            <div class="openChat-sender">
+                <div class="openChat-sender-details">
+                    <a href="#"><img class="openChat-sender-img" src="img/Erfan-pfp.png" alt="sample private chat img"/></a>
+                    <a href="#" class="openChat-sender-name">
+                        <div class="openChat-sender-username">Erfan</div>
+                        <div class="openChat-sender-lastseen">last seen recently</div>
+                    </a>
+                </div>
+                <div class="openChat-options">
+                    <div class="openChat-options-call">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="call-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-search">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-menu">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.025rem" class="chats-header-main-icon"
+                                      name="ellipsis-vertical"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="openChat-container">
+                <div class="openChat-content">
+                    <span class="openChat-content-message from--me">Hi there Sina!</span>
+                    <span class="openChat-content-message">Hi there Sina!</span>
+                    <span class="openChat-content-message">How's it going?</span>
+                    <span class="openChat-content-message from--me">Great!</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Long Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 😀</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                </div>
+                <div class="openChat-messageSender">
+                    <div class="openChat-messageSender-textinput">
+                        <a href="#">
+                            <ion-icon class="openChat-messageSender-icon" name="happy-outline"></ion-icon>
+                        </a>
+                        <input class="openChat-messageSender-input" placeholder="Message"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-openChat --user-mahdiyar --closed">
+            <div class="openChat-sender">
+                <div class="openChat-sender-details">
+                    <a href="#"><img class="openChat-sender-img" src="img/Mhdyr-pfp.jpg" alt="sample private chat img"/></a>
+                    <a href="#" class="openChat-sender-name">
+                        <div class="openChat-sender-username">Mhdyr</div>
+                        <div class="openChat-sender-lastseen">last seen recently</div>
+                    </a>
+                </div>
+                <div class="openChat-options">
+                    <div class="openChat-options-call">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="call-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-search">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-menu">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.025rem" class="chats-header-main-icon"
+                                      name="ellipsis-vertical"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="openChat-container">
+                <div class="openChat-content">
+                    <span class="openChat-content-message from--me">Hi there Sina!</span>
+                    <span class="openChat-content-message">Hi there Sina!</span>
+                    <span class="openChat-content-message">How's it going?</span>
+                    <span class="openChat-content-message from--me">Great!</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Long Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 😀</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                </div>
+                <div class="openChat-messageSender">
+                    <div class="openChat-messageSender-textinput">
+                        <a href="#">
+                            <ion-icon class="openChat-messageSender-icon" name="happy-outline"></ion-icon>
+                        </a>
+                        <input class="openChat-messageSender-input" placeholder="Message"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-openChat --user-mohammadreza --closed">
+            <div class="openChat-sender">
+                <div class="openChat-sender-details">
+                    <a href="#"><img class="openChat-sender-img" src="img/Mhreza-pfp.webp"
+                                     alt="sample private chat img"/></a>
+                    <a href="#" class="openChat-sender-name">
+                        <div class="openChat-sender-username">Mhreza</div>
+                        <div class="openChat-sender-lastseen">last seen recently</div>
+                    </a>
+                </div>
+                <div class="openChat-options">
+                    <div class="openChat-options-call">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="call-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-search">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.225rem" class="chats-header-main-icon"
+                                      name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="openChat-options-menu">
+                        <a href="#">
+                            <ion-icon style="font-size: 2.025rem" class="chats-header-main-icon"
+                                      name="ellipsis-vertical"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="openChat-container">
+                <div class="openChat-content">
+                    <span class="openChat-content-message from--me">Hi there Mohammad Reza!</span>
+                    <span class="openChat-content-message">Hi there Sina!</span>
+                    <span class="openChat-content-message">How's it going?</span>
+                    <span class="openChat-content-message from--me">Great!</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message">Example Text</span>
+                    <span class="openChat-content-message from--me">Long Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text 😀</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message ">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                    <span class="openChat-content-message from--me">Example Text</span>
+                </div>
+                <div class="openChat-messageSender">
+                    <div class="openChat-messageSender-textinput">
+                        <a href="#">
+                            <ion-icon class="openChat-messageSender-icon" name="happy-outline"></ion-icon>
+                        </a>
+                        <input class="openChat-messageSender-input" placeholder="Message"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+</body>
+</html>
